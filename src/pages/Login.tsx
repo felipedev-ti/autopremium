@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowLeft } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
-import { supabase } from "./supabase";
+import { supabase } from "../lib/supabase";
 
 type ViewMode = "login" | "register" | "forgot";
 

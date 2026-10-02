@@ -1,18 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import Login from "./Login";
-import UpdatePassword from "./UpdatePassword";
-    
-// Adicione isto no meio das suas outras rotas:
-<Route path="/update-password" element={<UpdatePassword />} />;
+import { AuthProvider } from "./contexts/AuthContext";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import UpdatePassword from "./pages/UpdatePassword";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/update-password" element={<UpdatePassword />} />
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
