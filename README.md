@@ -24,3 +24,10 @@ O projeto segue um padrão de separação de responsabilidades (Clean Code):
 1. Clone o repositório:
 ```bash
 git clone [https://github.com/felipedev-ti/autopremium.git](https://github.com/felipedev-ti/autopremium.git)
+
+## Autor
+Desenvolvido por **Felipe**.
+
+* **Curso:** Engenharia de Software | [CEULP/ ULBRA]
+* **GitHub:** [felipedev-ti](https://github.com/felipedev-ti)
+* **LinkedIn:** [Felipe Busquets Carreira](https://www.linkedin.com/in/felipe-busquets-carreira-ba15093b4/)
